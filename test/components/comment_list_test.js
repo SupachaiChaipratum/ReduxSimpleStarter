@@ -5,10 +5,10 @@ import CommentList from '../../src/components/comment_list'
 describe('CommentList', () => {
 
     let component;
-    const props = { comment:['new comment1', 'test comment']};
+    const props = { comments:['new comment1', 'test comment']};
     beforeEach(() => {
         
-        component = renderComponent(CommentList,null,props);
+        component = renderComponent(CommentList,{},props);
     })
 
     it('shows an LI for each comment', () =>{
@@ -16,8 +16,8 @@ describe('CommentList', () => {
     })
 
     it('shows each comment that is provided', () =>{
-         expect(component).to.contain(props.comment[0])
-         expect(component).to.contain(props.comment[1])
+         expect(component).to.contain(props.comments[0])
+         expect(component).to.contain(props.comments[1])
     })
 
 })
