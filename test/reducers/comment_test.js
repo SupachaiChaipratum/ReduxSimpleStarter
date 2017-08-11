@@ -11,5 +11,6 @@
       it('handles actions of type SAVE_COMMENT',() =>{
          const action = { type:SAVE_COMMENT,payload: 'new comment' };
          expect(commentReducer([],action)).to.be.eql(['new comment']);
+         
      })
  })
