@@ -4,7 +4,7 @@
 
  describe('Comments Reducer',() => {
      it('handles actions with unknow type',() =>{
-        expect(commentReducer()).to.be.instanceof(Array);
+       // expect(commentReducer()).to.be.instanceof(Array);
         expect(commentReducer()).to.be.eql([]);
      })
 
